@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f332-c73e-59f7-87e3" name="Goliath" revision="7" battleScribeVersion="2.01" authorName="Pinecones" gameSystemId="e0b2-fd9d-e110-5cee" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profiles/>
+  <rules/>
+  <infoLinks/>
+  <costTypes/>
+  <profileTypes/>
+  <categoryEntries/>
+  <forceEntries/>
+  <selectionEntries/>
+  <entryLinks>
+    <entryLink id="6e94-685b-c8ad-56ff" name="Ganger" hidden="false" targetId="be1e-cc03-00c6-5bdb" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="e07c-cafb-8ba9-b80f" name="Leader" hidden="false" targetId="bc1c-9300-cef6-7b58" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="0a47-40d0-033a-74ec" name="Champion" hidden="false" targetId="7154-f4fd-e354-273f" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="be1e-cc03-00c6-5bdb" name="Ganger" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="51fa-57c0-b028-7a95" name="Ganger" hidden="false" profileTypeId="5774-f79f-a3b7-e72d" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="6bb5-d80e-a19b-1d1a" value="4&quot;"/>
+            <characteristic name="WS" characteristicTypeId="b63f-b3e0-0943-d7a9" value="4+"/>
+            <characteristic name="BS" characteristicTypeId="0fa7-30b4-4582-f621" value="4+"/>
+            <characteristic name="S" characteristicTypeId="aba3-75b1-4a66-c5ed" value="4"/>
+            <characteristic name="T" characteristicTypeId="0358-5ace-b5c0-d69b" value="4"/>
+            <characteristic name="W" characteristicTypeId="ca12-f503-7ae4-42ff" value="1"/>
+            <characteristic name="I" characteristicTypeId="ac2f-586a-f7df-3a8d" value="4"/>
+            <characteristic name="A" characteristicTypeId="a987-af50-0bb1-fd2a" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="3f60-5808-1589-9540" value="8+"/>
+            <characteristic name="Cl" characteristicTypeId="5eb8-bad4-7afc-b90c" value="5+"/>
+            <characteristic name="Wil" characteristicTypeId="7245-c85d-e087-81fe" value="9+"/>
+            <characteristic name="Int" characteristicTypeId="d87a-5740-fb44-5134" value="8+"/>
+            <characteristic name="Sv" characteristicTypeId="e95c-5198-5d83-5098" value="6+ / 5+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="dcd9-7553-c06e-a151" name="Furnace Plates" hidden="false" targetId="bfbe-8f0e-d0e1-a3cd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="fc80-98b3-eb76-d891" name="New CategoryLink" hidden="false" targetId="cdf5-5a61-da3a-147b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3eb7-0302-6883-46b5" name="New CategoryLink" hidden="false" targetId="ca12-6ac2-dc47-76ec" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="392f-caf9-aebb-e551" name="Character" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54e5-3f56-c50b-ad39" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2051-5a51-6d51-4d13" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="77ca-0c35-f089-2bfb" name="Character" hidden="false" targetId="c1f0-739d-4676-019b" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="093b-ee1b-677b-217f" name="Weapons" hidden="false" targetId="8ecb-d367-3abb-d883" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="01d9-e272-1cb2-eac5" name="Wargear" hidden="false" targetId="4d05-30c4-9ea0-861e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="60.0"/>
+        <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+        <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7154-f4fd-e354-273f" name="Champion" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="1b95-0360-2d40-a52b" name="Champion" hidden="false" profileTypeId="5774-f79f-a3b7-e72d" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="6bb5-d80e-a19b-1d1a" value="4&quot;"/>
+            <characteristic name="WS" characteristicTypeId="b63f-b3e0-0943-d7a9" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="0fa7-30b4-4582-f621" value="3+"/>
+            <characteristic name="S" characteristicTypeId="aba3-75b1-4a66-c5ed" value="4"/>
+            <characteristic name="T" characteristicTypeId="0358-5ace-b5c0-d69b" value="4"/>
+            <characteristic name="W" characteristicTypeId="ca12-f503-7ae4-42ff" value="2"/>
+            <characteristic name="I" characteristicTypeId="ac2f-586a-f7df-3a8d" value="4+"/>
+            <characteristic name="A" characteristicTypeId="a987-af50-0bb1-fd2a" value="2"/>
+            <characteristic name="Ld" characteristicTypeId="3f60-5808-1589-9540" value="6+"/>
+            <characteristic name="Cl" characteristicTypeId="5eb8-bad4-7afc-b90c" value="5+"/>
+            <characteristic name="Wil" characteristicTypeId="7245-c85d-e087-81fe" value="8+"/>
+            <characteristic name="Int" characteristicTypeId="d87a-5740-fb44-5134" value="8+"/>
+            <characteristic name="Sv" characteristicTypeId="e95c-5198-5d83-5098" value="6+ / 5+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="ea56-a3c4-5eff-6417" name="Furnace Plates" hidden="false" targetId="bfbe-8f0e-d0e1-a3cd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="ad34-2eb8-f314-05be" name="New CategoryLink" hidden="false" targetId="1e3c-093e-fc09-60c2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="59bb-600c-fa13-d894" name="New CategoryLink" hidden="false" targetId="ca12-6ac2-dc47-76ec" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e60d-3f5e-cb18-c2b9" name="Character" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5289-2264-497b-8a0c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b710-5fc4-a3b0-4a88" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="0852-e69d-4d6f-d446" name="Character" hidden="false" targetId="c1f0-739d-4676-019b" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8a34-9999-a94c-86a1" name="Weapons" hidden="false" targetId="8ecb-d367-3abb-d883" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="fd66-574b-9291-d092" name="Wargear" hidden="false" targetId="4d05-30c4-9ea0-861e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="110.0"/>
+        <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+        <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc1c-9300-cef6-7b58" name="Leader" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="f83c-2fb6-1c27-e6e4" name="Leader" hidden="false" profileTypeId="5774-f79f-a3b7-e72d" profileTypeName="Model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="6bb5-d80e-a19b-1d1a" value="4&quot;"/>
+            <characteristic name="WS" characteristicTypeId="b63f-b3e0-0943-d7a9" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="0fa7-30b4-4582-f621" value="3+"/>
+            <characteristic name="S" characteristicTypeId="aba3-75b1-4a66-c5ed" value="4"/>
+            <characteristic name="T" characteristicTypeId="0358-5ace-b5c0-d69b" value="4"/>
+            <characteristic name="W" characteristicTypeId="ca12-f503-7ae4-42ff" value="2"/>
+            <characteristic name="I" characteristicTypeId="ac2f-586a-f7df-3a8d" value="3+"/>
+            <characteristic name="A" characteristicTypeId="a987-af50-0bb1-fd2a" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="3f60-5808-1589-9540" value="5+"/>
+            <characteristic name="Cl" characteristicTypeId="5eb8-bad4-7afc-b90c" value="4+"/>
+            <characteristic name="Wil" characteristicTypeId="7245-c85d-e087-81fe" value="8+"/>
+            <characteristic name="Int" characteristicTypeId="d87a-5740-fb44-5134" value="7+"/>
+            <characteristic name="Sv" characteristicTypeId="e95c-5198-5d83-5098" value="6+ / 5+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="966b-bde8-abdd-8222" name="Furnace Plates" hidden="false" targetId="bfbe-8f0e-d0e1-a3cd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="1f25-b699-7922-d3de" name="New CategoryLink" hidden="false" targetId="3f48-3cf7-6934-2b29" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="00d2-1dd4-3bc6-712c" name="New CategoryLink" hidden="false" targetId="ca12-6ac2-dc47-76ec" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d58b-507a-830d-328b" name="Character" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="370d-c01e-aaa3-a878" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce54-fa78-3074-02d1" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ccc1-72db-750c-b8b9" name="Character" hidden="false" targetId="c1f0-739d-4676-019b" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="04b5-8cbb-d588-3204" name="Weapons" hidden="false" targetId="8ecb-d367-3abb-d883" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2caf-a9d2-6d60-c99a" name="Wargear" hidden="false" targetId="4d05-30c4-9ea0-861e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="145.0"/>
+        <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+        <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="c1f0-739d-4676-019b" name="Character" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="f836-5f1e-090d-4052" name="Specialist" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e94-685b-c8ad-56ff" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="571c-df8b-533a-0245" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="95ea-2fa5-a1ab-b129" name="Goliath Skills" hidden="false" targetId="8e40-8461-ab25-d5db" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8311-50df-12c1-2f65" name="Leader Skills" hidden="true" targetId="6568-3fd4-2fd6-b3ae" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e07c-cafb-8ba9-b80f" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8e40-8461-ab25-d5dc" name="Goliath Skills" hidden="true" targetId="8e40-8461-ab25-d5db" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e07c-cafb-8ba9-b80f" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a47-40d0-033a-74ec" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="456e-741c-5032-c54a" name="Experience" hidden="false" targetId="e82d-4dce-7631-3ce0" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8ecb-d367-3abb-d883" name="Weapons" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="aa9b-e132-09d9-3ec0" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57d2-4e25-e2ae-1e45" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="b4d8-da23-7ed4-8bbc" name="Goliath Status Weapons" hidden="true" targetId="b591-85f2-0836-4717" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e07c-cafb-8ba9-b80f" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a47-40d0-033a-74ec" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="167d-6e90-5533-f595" name="Goliath Weapons" hidden="false" targetId="e2e9-f7b2-3ac0-75ec" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b591-85f2-0836-4717" name="Goliath Status Weapons" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="ec43-7289-3ddc-7791" name="&quot;Krumper&quot; Rivet cannon" hidden="false" targetId="2fe7-c488-668e-cb1b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="db2d-75b8-611c-8bc3" name="Power Hammer" hidden="false" targetId="c8ee-fe4c-b416-3c09" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1e05-fb7c-87c0-f298" name="&quot;Renderizer&quot; Serrated Axe" hidden="false" targetId="bb77-5c5b-64d7-669b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5099-338c-cc27-0c1f" name="Plasma/Stub Combi-pistol" hidden="false" targetId="e302-f841-34e3-eb29" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8e40-8461-ab25-d5db" name="Goliath Skills" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="1ccf-52e3-dd26-edf7" name="Bull Charge" hidden="false" targetId="8c76-df50-ad04-c297" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="019a-f257-8ced-bdca" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1ecc-c158-01f7-f6ad" name="Building Biceps" hidden="false" targetId="305f-2c01-b577-35be" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecb1-b953-d039-435f" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="23e8-9e16-234d-8027" name="Commanding Presence" hidden="false" targetId="f764-3730-676a-2a6c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14d5-7902-4c32-c2c4" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="b46d-9f8a-dee3-7d46" name="Crushing Blows" hidden="false" targetId="0b40-0c63-eb67-51a1" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f906-84fd-3455-8a80" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="4104-6cb0-5e60-a3dd" name="Fearsome" hidden="false" targetId="a61f-6dd2-dedc-f267" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d9-793b-99b2-bdd5" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="69a2-e09d-2683-e53e" name="Nerve of Steel" hidden="false" targetId="8640-ca96-02d4-733e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b917-6105-87da-3c04" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="ad12-a81a-5a66-99de" name="True Grit" hidden="false" targetId="12cc-18e7-099b-6613" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c54-c3e2-e460-8d92" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="ee41-0a6f-d6f0-27a6" name="Unustoppable" hidden="false" targetId="fb1a-54e0-ac01-2281" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fbf-2133-642c-2fc8" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e2e9-f7b2-3ac0-75ec" name="Goliath Weapons" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="94eb-007f-5e06-9606" name="Melee weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ad45-a836-672c-3530" name="Brute Cleaver" hidden="false" targetId="94bf-c3b7-1f48-b408" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="ab5f-c1a0-fe14-dfa8" name="Fighting Knife" hidden="false" targetId="ccc2-8a25-a51e-6e05" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="98e8-31fe-4719-dc0d" name="Spud-jacker" hidden="false" targetId="ba6d-e919-94df-f281" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0314-c557-6240-9093" name="Combat Shotgun" hidden="false" targetId="add3-7d16-aeb5-6059" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="30e1-7a3d-b0cf-3e0d" name="Stub Gun" hidden="false" targetId="7b63-7e80-0356-5968" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1b49-5bf5-73a4-91a1" name="Grenade Launcher" hidden="false" targetId="ac72-264a-b99b-5236" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="abc1-d245-080d-cc3c" name="Stub Cannon" hidden="false" targetId="0078-9c2d-eb2d-d4d4" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4d05-30c4-9ea0-861e" name="Wargear" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8b63-2f68-2ca5-018d" name="Krak Grenade" hidden="false" targetId="8744-dc35-e915-e11d" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1faa-3f23-f54b-ac8a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6fcb-5d2d-f47d-72b1" name="Frag Grenade" hidden="false" targetId="4892-483b-db9f-3467" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7287-f1f2-946d-9f84" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="fb0a-711f-f186-a9cf" name="Respirator" hidden="false" targetId="529c-afbb-cdc9-06a9" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54fd-9f4b-91df-9056" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="fd5d-4bb4-d76d-9e43" name="Stimm-slug stash" hidden="false" targetId="e3d2-5872-cec8-c4af" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="923d-bb31-3c82-37e8" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules/>
+  <sharedProfiles/>
+</catalogue>
