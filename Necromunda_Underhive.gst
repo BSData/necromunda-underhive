@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e0b2-fd9d-e110-5cee" name="Necromunda Underhive" revision="11" battleScribeVersion="2.01" authorName="Pinecones" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e0b2-fd9d-e110-5cee" name="Necromunda Underhive" revision="12" battleScribeVersion="2.01" authorName="Pinecones" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -68,19 +68,14 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdee-bc00-25d1-df1b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a961-7e05-9f11-4aef" type="min"/>
-      </constraints>
+      <constraints/>
     </categoryEntry>
     <categoryEntry id="1e3c-093e-fc09-60c2" name="Champion" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8360-5ac3-14fc-68ac" type="max"/>
-      </constraints>
+      <constraints/>
     </categoryEntry>
     <categoryEntry id="ca12-6ac2-dc47-76ec" name="Fighters" hidden="false">
       <profiles/>
@@ -122,7 +117,6 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d64-c14b-9e1b-ff03" type="min"/>
-            <constraint field="aa9b-e132-09d9-3ec0" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75bb-2623-afdb-7c78" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b30e-c854-6a32-cb8a" name="Leader" hidden="false" targetId="3f48-3cf7-6934-2b29" primary="false">
@@ -301,7 +295,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="4440-dd06-23e8-2fae" name="&quot;Krumper&quot; Rivet Cannon, Rapid Fire" hidden="false" targetId="dd33-9277-9dfc-9959" type="profile">
+        <infoLink id="4440-dd06-23e8-2fae" name="&quot;Krumper&quot; Rivet Cannon - Rapid Fire" hidden="false" targetId="dd33-9277-9dfc-9959" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -313,13 +307,13 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="7667-e516-77d3-3e24" name="Rapid Fire (x)" hidden="false" targetId="4e1d-8d84-5009-26e4" type="rule">
+        <infoLink id="7667-e516-77d3-3e24" name="Rapid Fire (X)" hidden="false" targetId="4e1d-8d84-5009-26e4" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="9811-06f0-151f-8411" name="Unweildy" hidden="false" targetId="0bd2-6bbb-f3ff-4b9e" type="rule">
+        <infoLink id="9811-06f0-151f-8411" name="Unwieldy" hidden="false" targetId="0bd2-6bbb-f3ff-4b9e" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -569,7 +563,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="bba1-4dba-91f0-91cd" value=", Combi">
+            <modifier type="set" field="bba1-4dba-91f0-91cd" value="Combi, Pistol">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -581,7 +575,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="bba1-4dba-91f0-91cd" value=", Combi">
+            <modifier type="set" field="bba1-4dba-91f0-91cd" value="Combi, Pistol, Scarce">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1191,7 +1185,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="bba1-4dba-91f0-91cd" value=", Combi">
+            <modifier type="set" field="bba1-4dba-91f0-91cd" value="Combi, Scarce, Toxin">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1203,7 +1197,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="bba1-4dba-91f0-91cd" value=", Combi">
+            <modifier type="set" field="bba1-4dba-91f0-91cd" value="Combi, Rapid Fire (1)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1565,19 +1559,16 @@
       <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="01a6-fada-a401-8954" name="Iron Will" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="cd5a-f674-8677-78d4" name="Iron Will" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="fcb8-55c6-703a-8f2b" name="Iron Will" hidden="false" targetId="e453-0ff6-5f4e-85bf" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <characteristics>
-                <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="Subtract 1 to the result of any Bottle rolls while the Leader is on the battlefield and not Seriously Injured."/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9965-bd73-aaee-2247" type="max"/>
@@ -1675,13 +1666,13 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="4e1d-8d84-5009-26e4" name="Rapid Fire (x)" hidden="false">
+    <rule id="4e1d-8d84-5009-26e4" name="Rapid Fire (X)" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When firing with a Rapid Fire weapon, a successful hit roll scores a number of hits equal to the number of bullet holes on the Firepower dice. In addition the controlling player can roll more than one Firepower dice, up to the number shown in brackets (for example, when firing a Rapid Fire (2) weapon, up to two firepower dice can be rolled). Make an Ammo check for each Ammo symbol that is rolled. If any of
-them fail, the gun runs Out of Ammo. If two or more of them fail, the gun has jammed and cannot be used for the rest of the battle.
+      <description>When firing with a Rapid Fire weapon, a successful hit roll scores a number of hits equal to the number of bullet holes on the Firepower dice. In addition the controlling player can roll more than one Firepower dice, up to the number shown in brackets (for example, when firing a Rapid Fire (2) weapon, up to two firepower dice can be rolled). Make an Ammo check for each Ammo symbol that is rolled. If any of them fail, the gun runs Out of Ammo. If two or more of them fail, the gun has jammed and cannot be used for the rest of the battle.
+
 If a Rapid Fire weapon scores more than one hit, the hits can be split between multiple targets. The first must be allocated to the initial target, but the remainder can be allocated to other fighters within 3’’ of the first who are also within range and line of sight. These must not be any harder to hit than the original target – if a target in the open is hit, an obscured target cannot have hits allocated to it. Allocate all of the hits before making any wound rolls.</description>
     </rule>
     <rule id="7c92-1059-a9b2-f7ee" name="Combi" hidden="false">
@@ -1705,7 +1696,9 @@ If a Rapid Fire weapon scores more than one hit, the hits can be split between m
       <modifiers/>
       <description>If the hit roll for a weapon with the Knockback trait is equal to or higher than the target’s Strength (before any modifiers are applied), they are immediately moved 1’’ directly away from the attacking fighter. If the fighter cannot be moved the full 1’’ because of a wall, obstacle or another fighter, they move as far as possible and the attack’s Damage is increased by 1.
 
-If a Blast weapon has the Knockback trait, roll a D6 for each fighter that is hit. If the result is equal to or higher than their Strength, they are Knocked Back as described above – however, they are moved directly away from the center of the Blast marker instead. If the center of the Blast marker was over the center of their base, roll a Scatter dice to determine which way they are moved. If a Melee weapon has the Knockback trait, the attacking fighter can choose to follow the target up moving directly towards them after they have been Knocked Back to remain in contact. If the attack was made across a barricade, the attacker cannot do this.</description>
+If a Blast weapon has the Knockback trait, roll a D6 for each fighter that is hit. If the result is equal to or higher than their Strength, they are Knocked Back as described above – however, they are moved directly away from the center of the Blast marker instead. If the center of the Blast marker was over the center of their base, roll a Scatter dice to determine which way they are moved (re-rolling hits). 
+
+If a Melee weapon has the Knockback trait, the attacking fighter can choose to follow the target up moving directly towards them after they have been Knocked Back to remain in contact. If the attack was made across a barricade, the attacker cannot do this.</description>
     </rule>
     <rule id="c63b-2043-2de7-42b5" name="Melee" hidden="false">
       <profiles/>
@@ -1733,14 +1726,14 @@ If a Blast weapon has the Knockback trait, roll a D6 for each fighter that is hi
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Instead of making an Injury roll for a toxin attack, roll 2D6. The target&apos;s controlling player rolls a D6 and adds the target&apos;s Toughness, if the target&apos;s roll is higher, they shrug off the toxin’s effects. If the rolls are equal, the target is Seriously Injured. If the 2D6 roll is higher, the target goes Out of Action.</description>
+      <description>Instead of making an Injury roll for a toxin attack, roll 2D6. The target&apos;s controlling player rolls a D6 and adds the target&apos;s Toughness. If the target&apos;s roll is higher, they shrug off the toxin’s effects. If the rolls are equal, the target is Seriously Injured. If the 2D6 roll is higher, the target goes Out of Action.</description>
     </rule>
-    <rule id="0bd2-6bbb-f3ff-4b9e" name="Unweildy" hidden="false">
+    <rule id="0bd2-6bbb-f3ff-4b9e" name="Unwieldy" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A shoot action made with this weapon counts as a Double action as opposed to a Single action. In addition, a fighter who uses an Unwieldy melee weapon in close combat, cannot use a second weapon at the same time – this one uses both hands.</description>
+      <description>A shoot action made with this weapon counts as a Double action as opposed to a Single action. In addition, a fighter who uses an Unwieldy melee weapon in close combat cannot use a second weapon at the same time – this one uses both hands.</description>
     </rule>
     <rule id="0f02-895e-cecd-79d2" name="Scarce" hidden="false">
       <profiles/>
@@ -1775,7 +1768,7 @@ If a Blast weapon has the Knockback trait, roll a D6 for each fighter that is hi
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>The weapon is surrounded by a crackling power field. Attacks made by Power weapons cannot be parried except by other Power weapons. In addition, if the hit roll for a Power weapon is a 6, no save roll can be made against the attack and it Damage is increased by 1.</description>
+      <description>The weapon is surrounded by a crackling power field. Attacks made by Power weapons cannot be parried except by other Power weapons. In addition, if the hit roll for a Power weapon is a 6, no save roll can be made against the attack and its Damage is increased by 1.</description>
     </rule>
     <rule id="420d-1452-c366-f348" name="Template" hidden="false">
       <profiles/>
@@ -1810,22 +1803,21 @@ If a Blast weapon has the Knockback trait, roll a D6 for each fighter that is hi
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Grenade with the Demolitions trait can be used when making close combat attacks against scenery targets (such as locked doors or scenario objectives). A fighter who uses a grenade in this way makes one attack (regardless of how many Attack dice they would normally roll), which hits automatically.</description>
+      <description>Grenades with the Demolitions trait can be used when making close combat attacks against scenery targets (such as locked doors or scenario objectives). A fighter who uses a grenade in this way makes one attack (regardless of how many Attack dice they would normally roll), which hits automatically.</description>
     </rule>
     <rule id="30ce-d208-ed5e-28af" name="Blaze" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>After an attack with the Blaze trait has been resolved, roll a D6 if the target was hit but not taken Out of Action. On a 4, 5 or 6 they catch fire – place a Blaze marker on their fighter card. When a fighter with a Blaze marker is activated, roll a D6, adding 1 to the result for each other Active friendly fighter within 1’’ . On a 6 or more the flames go out, the Blaze marker is removed and they can act as normal. Otherwise they suffer immediate Strength 3, AP -1, Damage 1 hit, if they are standing , they move 2D6’’ in a random
-direction (determined using the Scatter dice, and stopping if they would move within 1’’ of an enemy), and their action ends. A fighter with a Blaze marker can never make any other actions, and cannot make attacks in any way (including Reaction attacks). Alternatively, when a fighter is activated, they can make a Double action and become Pinned to add 4 to the result of the roll to see whether the flames go out.</description>
+      <description>After an attack with the Blaze trait has been resolved, roll a D6 if the target was hit but not taken Out of Action. On a 4, 5 or 6 they catch fire – place a Blaze marker on their fighter card. When a fighter with a Blaze marker is activated, roll a D6, adding 1 to the result for each other Active friendly fighter within 1’’ . On a 6 or more the flames go out, the Blaze marker is removed and they can act as normal. Otherwise they suffer immediate Strength 3, AP -1, Damage 1 hit; if they are standing, they move 2D6’’ in a random direction (determined using the Scatter dice, and stopping if they would move within 1’’ of an enemy), and their action ends. A fighter with a Blaze marker can never make any other actions, and cannot make attacks in any way (including Reaction attacks). Alternatively, when a fighter is activated, they can make a Double action and become Pinned to add 4 to the result of the roll to see whether the flames go out.</description>
     </rule>
     <rule id="ed09-eee4-c760-4e4f" name="Grenade" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>The weapon uses Grenade Rules</description>
+      <description>The weapon uses Grenade Rules.</description>
     </rule>
     <rule id="46c0-f8a9-8d4f-3ec8" name="Gas" hidden="false">
       <profiles/>
@@ -1846,7 +1838,7 @@ direction (determined using the Scatter dice, and stopping if they would move wi
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>The weapon uses a Blast maker.</description>
+      <description>The weapon uses a Blast marker.</description>
     </rule>
     <rule id="26f6-9caf-8d8a-ffb9" name="Chem-Synth" hidden="false">
       <profiles/>
@@ -1854,22 +1846,21 @@ direction (determined using the Scatter dice, and stopping if they would move wi
       <infoLinks/>
       <modifiers/>
       <description>An Active or Engaged fighter with a chem-synth can make the following action:
-Synthesize Poison (Basic) – If the fighter is Engaged, make a Cool check. If the check is passed or if the fighter is not Engaged, any Gas or Toxin weapons they use until the end of their activation are poisoned and the targets Toughness is reduced by 1 when resolving those attacks.</description>
+Synthesize Poison (Basic) – If the fighter is Engaged, make a Cool check. If the check is passed or if the fighter is not Engaged, any Gas or Toxin weapons they use until the end of their activation are poisoned and the target&apos;s Toughness is reduced by 1 when resolving those attacks.</description>
     </rule>
     <rule id="4d13-d821-bbbd-b25c" name="Flak Armour" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Flak armour grants a 6+ save roll. Against weapons that use a Blast maker, this is increased to 5+ save roll.</description>
+      <description>Flak armour grants a 6+ save roll. Against weapons that use a Blast marker, this is increased to a 5+ save roll.</description>
     </rule>
     <rule id="bfbe-8f0e-d0e1-a3cd" name="Furnace Plates" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Furnace plates grant a 6+ save roll. This is increased to a 5+ save role against attacks from fighters who are within the fighter’s vision arc (the 90° arc to their front). If it is not clear whether the attacker is within the target vision’s arc, use a Vision arc template to check – if the center of the attacker’s base is within the arc, the target benefits from the increased save.
-Against attacks with the Blast trait, use the center of the Blast marker in place of the attacker.</description>
+      <description>Furnace plates grant a 6+ save roll. This is increased to a 5+ save role against attacks from fighters who are within the fighter’s vision arc (the 90° arc to their front). If it is not clear whether the attacker is within the target&apos;s front arc, use a Vision Arc template to check – if the center of the attacker’s base is within the arc, the target benefits from the increased save. Against attacks with the Blast trait, use the center of the Blast marker in place of the attacker.</description>
     </rule>
     <rule id="72ca-98c2-c004-7c60" name="Respirator" hidden="false">
       <profiles/>
@@ -1904,7 +1895,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Rapid Fire (1)"/>
       </characteristics>
     </profile>
-    <profile id="6be1-f720-93c2-3300" name="Combat Shotgun, Salvo Fire" page="69" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="6be1-f720-93c2-3300" name="Combat Shotgun - Salvo fire" page="69" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1921,7 +1912,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Knockback, Rapid Fire (1)"/>
       </characteristics>
     </profile>
-    <profile id="0cba-b41e-ac12-1eda" name="Combat Shotgun, Shedder Blast" page="69" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="0cba-b41e-ac12-1eda" name="Combat Shotgun - Shredder blast" page="69" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1955,7 +1946,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Pistol, Rapid Fire (1)"/>
       </characteristics>
     </profile>
-    <profile id="dd33-9277-9dfc-9959" name="&quot;Krumper&quot; Rivet Cannon, Rapid Fire" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="dd33-9277-9dfc-9959" name="&quot;Krumper&quot; Rivet Cannon - Rapid Fire" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1969,10 +1960,10 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-1"/>
         <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="2"/>
         <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="3+"/>
-        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Rapid Fire (1), Unweildy"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Rapid Fire (1), Unwieldy"/>
       </characteristics>
     </profile>
-    <profile id="cc7f-cc58-4e73-033f" name="&quot;Krumper&quot; Rivet Cannon, Super-heated rivet" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="cc7f-cc58-4e73-033f" name="&quot;Krumper&quot; Rivet Cannon - Super-heated rivet" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1986,7 +1977,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-2"/>
         <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="2"/>
         <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="3+"/>
-        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Blaze, Unweildy"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Blaze, Unwieldy"/>
       </characteristics>
     </profile>
     <profile id="c328-d43f-6132-2494" name="Lasgun" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
@@ -2006,7 +1997,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Plentiful"/>
       </characteristics>
     </profile>
-    <profile id="e1e0-ecba-6d91-1b54" name="Needle Rifle" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="e1e0-ecba-6d91-1b54" name="Needle rifle" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2020,10 +2011,10 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-1"/>
         <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="-"/>
         <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="6+"/>
-        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Scarce, Toxic"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Scarce, Toxin"/>
       </characteristics>
     </profile>
-    <profile id="6069-54ec-3c42-bf89" name="Bolter" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="6069-54ec-3c42-bf89" name="Boltgun" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2040,7 +2031,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Rapid Fire (1)"/>
       </characteristics>
     </profile>
-    <profile id="0309-dbd5-0f3a-18eb" name="Frag Grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="0309-dbd5-0f3a-18eb" name="Frag grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2057,7 +2048,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Blast (3&quot;), Knockback, Grenade"/>
       </characteristics>
     </profile>
-    <profile id="a03d-e2df-189f-e9e8" name="Choke Gas Grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="a03d-e2df-189f-e9e8" name="Choke gas grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2074,7 +2065,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Blast (3&quot;), Gas, Grenade"/>
       </characteristics>
     </profile>
-    <profile id="ea93-2a60-bf13-2023" name="Krak Grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="ea93-2a60-bf13-2023" name="Krak grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2091,7 +2082,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Demolitions, Grenade"/>
       </characteristics>
     </profile>
-    <profile id="03ce-b77e-631c-bdb1" name="Grenade Launcher, Frag" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="03ce-b77e-631c-bdb1" name="Grenade Launcher - Frag grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2108,7 +2099,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Blast (3&quot;), Knockback"/>
       </characteristics>
     </profile>
-    <profile id="ef2d-65d8-ab3e-96cc" name="Grenade Launcher, Krak" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="ef2d-65d8-ab3e-96cc" name="Grenade Launcher - Krak grenade" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2122,7 +2113,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-2"/>
         <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="2"/>
         <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="6+"/>
-        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Demolitions"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value=""/>
       </characteristics>
     </profile>
     <profile id="a95c-9377-60c6-2edd" name="Laspistol" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
@@ -2159,7 +2150,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Gas, Template"/>
       </characteristics>
     </profile>
-    <profile id="e029-5e76-8af8-ba7e" name="Plasma Pistol, Low power" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="e029-5e76-8af8-ba7e" name="Plasma pistol - Low power" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2176,7 +2167,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Pistol, Scarce"/>
       </characteristics>
     </profile>
-    <profile id="41f8-7948-d553-fec6" name="Plasma Pistol, Maximal power" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="41f8-7948-d553-fec6" name="Plasma pistol - Maximal power" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2190,10 +2181,10 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-2"/>
         <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="3"/>
         <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="5+"/>
-        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Pistol, Scarce, unstable"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Pistol, Scarce, Unstable"/>
       </characteristics>
     </profile>
-    <profile id="bd50-9e11-50c4-b464" name="Stub Gun" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="bd50-9e11-50c4-b464" name="Stub gun" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2210,7 +2201,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Pistol, Plentiful"/>
       </characteristics>
     </profile>
-    <profile id="2883-8d62-7bff-e3d2" name="Stub Cannon" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="2883-8d62-7bff-e3d2" name="Stub cannon" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2227,7 +2218,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Knockback"/>
       </characteristics>
     </profile>
-    <profile id="ed49-d488-c31d-460e" name="Showgun, Solid Slug" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="ed49-d488-c31d-460e" name="Shotgun - Solid Slug" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2244,7 +2235,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Knockback"/>
       </characteristics>
     </profile>
-    <profile id="0061-92fd-2fee-c4e2" name="Shotgun, Scatter Shell" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="0061-92fd-2fee-c4e2" name="Shotgun - Scatter shell" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2261,7 +2252,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Scattershot"/>
       </characteristics>
     </profile>
-    <profile id="7687-39ad-ea68-1595" name="Brute Cleaver" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="7687-39ad-ea68-1595" name="Brute cleaver" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2278,7 +2269,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee, Disarm"/>
       </characteristics>
     </profile>
-    <profile id="3f4b-2f38-0fc4-8b11" name="Fighting Knife" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="3f4b-2f38-0fc4-8b11" name="Fighting knife" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2295,7 +2286,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Backstab, Melee"/>
       </characteristics>
     </profile>
-    <profile id="8ff1-1454-099a-495e" name="Power Hammer" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="8ff1-1454-099a-495e" name="Power hammer" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2306,13 +2297,13 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Acc S" characteristicTypeId="575d-84b7-41cb-bfdb" value="-"/>
         <characteristic name="Acc L" characteristicTypeId="06be-d11e-cdbf-1be4" value="-"/>
         <characteristic name="Str" characteristicTypeId="b60f-bf38-2db3-1ff5" value="S+1"/>
-        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-2"/>
-        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="1"/>
+        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-1"/>
+        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="2"/>
         <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="-"/>
-        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melle, Power"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee, Power"/>
       </characteristics>
     </profile>
-    <profile id="de04-3d41-b4fe-c8c6" name="Power Sword" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="de04-3d41-b4fe-c8c6" name="Power sword" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2346,7 +2337,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee, Pulverize, Unwieldy"/>
       </characteristics>
     </profile>
-    <profile id="14cd-e578-5e9f-1580" name="Shock Whip" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="14cd-e578-5e9f-1580" name="Shock whip" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2363,7 +2354,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Shock, Versatile"/>
       </characteristics>
     </profile>
-    <profile id="bcbb-e860-5b45-4f93" name="Stiletto Knife" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+    <profile id="bcbb-e860-5b45-4f93" name="Stiletto knife" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2406,13 +2397,13 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="When the fighter makes attacks as part of a Charge action, any Melee weapons they use gain the Knockback trait and are resolved at +1 Strength."/>
       </characteristics>
     </profile>
-    <profile id="a551-e8d3-2345-ade2" name="Building Biceps" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
+    <profile id="a551-e8d3-2345-ade2" name="Bulging Biceps" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If any weapons carried by the fighter have the Unwieldy trait, the effect of Unwieldy is ignored."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If any weapons carried by the fighter have the Unwieldy trait, the effects of Unwieldy are ignored."/>
       </characteristics>
     </profile>
     <profile id="8dd2-7a99-ff74-12d0" name="Commanding Presence" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2421,7 +2412,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If a group is activated, and this fighter is chosen to lead the group, it can include one more fighter than normal (ie, a Champion could activate two other fighters instead of one, or a Leader could activate three)."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If a group is activated, and this fighter is chosen to lead the group, it can include one more fighter than normal (i.e. a Champion could activate two other fighters instead of one, or a Leader could activate three)."/>
       </characteristics>
     </profile>
     <profile id="0b02-db43-a7d6-0910" name="Crushing Blow" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2430,7 +2421,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="Before rolling to hit for a fighter&apos;s close combat attacks, the controlling player can nominate one dice to make a Crushing Blow. This cannot be a dice that is rolling to hit for a pistol. If that dice hits, the attack’s Strength and Damage are each increased by 1."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="Before rolling to hit for the fighter&apos;s close combat attacks, the controlling player can nominate one dice to make a Crushing Blow. This cannot be a dice that is rolling to hit for a pistol. If that dice hits, the attack’s Strength and Damage are each increased by 1."/>
       </characteristics>
     </profile>
     <profile id="69f6-715d-26c2-ab19" name="Fearsome" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2442,13 +2433,13 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
         <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If an enemy makes a Charge action that targets this fighter, they must make a Cool check before moving. If the check is failed, they cannot move and their action ends immediately."/>
       </characteristics>
     </profile>
-    <profile id="1938-0fe3-4ed4-51e1" name="Nerve of Steel" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
+    <profile id="1938-0fe3-4ed4-51e1" name="Nerves of Steel" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="When the fighter is hit by a ranged attack, make a Cool check for them, if it is passed they are not Pinned."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="When the fighter is hit by a ranged attack, make a Cool check for them. If it is passed, they are not Pinned."/>
       </characteristics>
     </profile>
     <profile id="0f70-5bf8-281b-2cff" name="True Grit" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2457,7 +2448,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="When making an Injury roll for the fighter, roll one less injury dice (for example, a Damage 2 weapon would roll one dice). Against attacks with Damage 1, roll two dice – the player controlling the fighter with True Grit, can then choose to discard one before resolving the dice effects."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="When making an Injury roll for the fighter, roll one less injury dice (for example, a Damage 2 weapon would roll one dice). Against attacks with Damage 1, roll two dice – the player controlling the fighter with True Grit can then choose to discard one before resolving the dice effects."/>
       </characteristics>
     </profile>
     <profile id="4f74-1c37-0870-4d50" name="Unstoppable" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2529,7 +2520,9 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If this fighter suffers a wound from a ranged or close combat attack, roll a D6. On a 6, the attack is dodged and has no effect; otherwise continue to make a save roll as normal.   If the model dodges a weapon that uses a Blast maker or Flame template, a roll of 6 does not automatically cancel the attack – instead, it allows the fighter to move up to 2’’ before seeing whether they are hit. They cannot move within 1’’ of an enemy fighter."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If this fighter suffers a wound from a ranged or close combat attack, roll a D6. On a 6, the attack is dodged and has no effect; otherwise continue to make a save roll as normal.
+
+If the model dodges a weapon that uses a Blast marker or Flame template, a roll of 6 does not automatically cancel the attack – instead, it allows the fighter to move up to 2’’ before seeing whether they are hit. They cannot move within 1’’ of an enemy fighter."/>
       </characteristics>
     </profile>
     <profile id="3707-4dd9-445f-c264" name="Gunfighter" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2547,7 +2540,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="The fighter is not affected by the rules for target Priority. In addition, if they score a 6 to hit when making a ranged attack that does not use a Blast marker, they score a critical hit, and the attack’s Damage is doubled (if they are firing a Rapid Fire weapon, only the first hit’s Damage is doubled)"/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="The fighter is not affected by the rules for Target Priority. In addition, if they score a 6 to hit when making a ranged attack that does not use a Blast marker, they score a critical hit, and the attack’s Damage is doubled (if they are firing a Rapid Fire weapon, only the first hit’s Damage is doubled)"/>
       </characteristics>
     </profile>
     <profile id="e8fc-1e07-7ff1-da58" name="Sprint" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
@@ -2556,7 +2549,7 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If this fighter makes two Move (Simple) actions in a turn, they can use the second one to Sprint. This lets them make a Double Move instead of a Standard Move for that action."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If this fighter makes two Move (simple) actions in a turn, they can use the second one to Sprint. This lets them make a Double Move instead of a Standard Move for that action."/>
       </characteristics>
     </profile>
     <profile id="d9a3-80f2-3b1a-6824" name="Chem-Synth" hidden="false" profileTypeId="62b3-5d5d-4511-6451" profileTypeName="Wargear">
@@ -2566,6 +2559,15 @@ Against attacks with the Blast trait, use the center of the Blast marker in plac
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="f560-c082-daf1-7aca" value="An Active or Engaged fighter with a chem-synth can make the following action: Synthesize Poison (Basic) – If the fighter is Engaged, make a Cool check. If the check is passed or if the fighter is not Engaged, any Gas or Toxin weapons they use until the end of their activation are poisoned and the targets Toughness is reduced by 1 when resolving those attacks."/>
+      </characteristics>
+    </profile>
+    <profile id="e453-0ff6-5f4e-85bf" name="Iron Will" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="Add 1 to the result of any Bottle rolls while the Leader is on the battlefield and not Seriously Injured."/>
       </characteristics>
     </profile>
   </sharedProfiles>
